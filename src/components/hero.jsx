@@ -5,13 +5,14 @@ import "aos/dist/aos.css";
 
 function Hero() {
   return (
-    <section className="bg-[#2f4b5f] w-full">
+    <section className="bg-[#2f4b5f] w-full overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-20 py-16 sm:py-20 gap-12 lg:gap-16 ">
         <div
           data-aos="fade-right"
-          data-aos-duration="700"
-          data-aos-once="false"
-          className="w-full lg:w-1/2 text-[#cfd8df] text-center lg:text-left data-aos-slide-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-out"
+          className="w-full lg:w-1/2 text-[#cfd8df] text-center lg:text-left"
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-extrabold leading-tight lg:leading-[1.1]">
             A whole awesome
@@ -44,8 +45,9 @@ function Hero() {
 
         <div
           data-aos="fade-left"
-          data-aos-duration="600"
-          data-aos-once="false"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          data-aos-easing="ease-in-out"
           className="w-full lg:w-1/2 flex justify-center "
         >
           <img

@@ -5,19 +5,16 @@ function Header() {
 
   return (
     <div className="bg-[#213b52]">
-      <div className="flex justify-between md:justify-around items-center px-6 md:px-0 h-16 md:h-22">
-        <h1 className="text-2xl font-bold text-white">
+      <div className="flex justify-between md:justify-around items-center px-6 md:px-0 h-16 md:h-22 w-full overflow-hidden">
+        <h1 className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
           HARVOXX <span className="text-[#fdc134]">TECH HUB</span>
         </h1>
-
-       
         <button
           className="md:hidden text-white text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
         </button>
-
         <nav className="hidden md:flex gap-5 text-[#adc7de] items-center">
           <a href="" className="active text-white">
             Home
@@ -38,7 +35,7 @@ function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col gap-4 px-6 pb-6 text-[#adc7de] md:hidden">
+        <nav className="flex flex-col gap-4 px-6 pb-6 text-[#adc7de] md:hidden w-full overflow-hidden">
           <a href="" className="active text-white">
             Home
           </a>
